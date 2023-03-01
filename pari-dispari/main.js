@@ -12,7 +12,7 @@ function pariDispari(total){
     }
 }
 
-const userChoice = prompt("Inserisci: pari oppure dispari");
+const userChoice = prompt("Inserisci: pari oppure dispari").toLocaleLowerCase();
 const userNumber = Number(prompt("Inserisci un numero da 1 a 5"));
 let min = 1;
 let max = 5;
@@ -23,7 +23,7 @@ if(userNumber < 1 || userNumber > 5){
     alert("ERRORE INSERIMENTO, AGGIORNA LA PAGINA")
 }else{
     //console.log(userNumber);
-    //console.log(computerNumber);
+    console.log(computerNumber);
     //console.log(sum);
     console.log(pariDispari(sum));
     if((userChoice==='pari' && pariDispari(sum)==='pari') || (userChoice==='dispari' && pariDispari(sum)==='dispari')){
