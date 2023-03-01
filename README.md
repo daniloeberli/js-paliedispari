@@ -19,5 +19,5 @@ Salviamo in una variabile il numero casuale generato con la nostra funzione di n
 Infine definiamo una variabile che somma il nostro input e quello del computer.
 
 Controllo logico:
-Se la scelta dell'utente è pari ma il numero inserito è dispari, oppure sceglie dispari ma il numero inserito è pari oppure se il numero inserite è minore di 1 e maggiore di 5, allore stampiamo un messaggio di errore.
+Se il numero inserite è minore di 1 e maggiore di 5, allore stampiamo un messaggio di errore.
 Altrimenti invochiamo la nostra funzione che controlla se la variabile somma sia pari o dispari e stampiamo il risultato in console.

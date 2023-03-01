@@ -19,13 +19,18 @@ let max = 5;
 let computerNumber = getRndInteger(min,max);  
 let sum = userNumber + computerNumber;
 
-if((userChoice==='dispari' && userNumber%2===0) || (userChoice==='pari' && userNumber%2 !==0) || (userNumber < 1 || userNumber > 5)){
+if(userNumber < 1 || userNumber > 5){
     alert("ERRORE INSERIMENTO, AGGIORNA LA PAGINA")
 }else{
     //console.log(userNumber);
     //console.log(computerNumber);
     //console.log(sum);
     console.log(pariDispari(sum));
+    if((userChoice==='pari' && pariDispari(sum)==='pari') || (userChoice==='dispari' && pariDispari(sum)==='dispari')){
+        console.log("ha vinto l'utente")
+    }else{
+        console.log("ha vinto il computer")
+    }
 }
 
 
