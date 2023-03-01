@@ -16,14 +16,14 @@ const userChoice = prompt("Inserisci: pari oppure dispari");
 const userNumber = Number(prompt("Inserisci un numero da 1 a 5"));
 let min = 1;
 let max = 5;
-let computerChoice = getRndInteger(min,max);  
-let sum = userNumber + computerChoice;
+let computerNumber = getRndInteger(min,max);  
+let sum = userNumber + computerNumber;
 
 if((userChoice==='dispari' && userNumber%2===0) || (userChoice==='pari' && userNumber%2 !==0) || (userNumber < 1 || userNumber > 5)){
     alert("ERRORE INSERIMENTO, AGGIORNA LA PAGINA")
 }else{
     //console.log(userNumber);
-    //console.log(computerChoice);
+    //console.log(computerNumber);
     //console.log(sum);
     console.log(pariDispari(sum));
 }
