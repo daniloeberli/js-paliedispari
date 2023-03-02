@@ -2,12 +2,10 @@
 
 function isPalindrome(str){
     for(let i = 0; i <= str.length; i++){
-        if(str[i] === str[str.length - 1]){
-            return "Palindroma"
-        }else{
-            return "Non è palindroma"
+        if(str[i] !== str[str.length - 1]){
+            return "Non è Palindroma"
         }
-    }
+    }return "Palindroma"
 }
 
 const parola = prompt('Inserisci una parola').toLocaleLowerCase();
